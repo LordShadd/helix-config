@@ -1,0 +1,18 @@
+[[language]]
+name = "svelte"
+auto-format = true
+formatter = { command = "prettier", args = ["--plugin", "prettier-plugin-svelte", "--stdin"] }
+language-servers = [
+  { name = "tailwind-css-ls", except-features = ["hover"] },
+  "svelteserver",
+  "emmet-ls",
+  "eslint-ls"
+]
+
+[[language]]
+name = "rust"
+
+[language-server.rust-analyzer.config.check]
+auto-format = false
+language-servers = ["rust-analyzer", "scls"]
+command = "clippy"

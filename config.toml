@@ -1,0 +1,8 @@
+theme = "github_dark"
+
+[editor]
+mouse = false
+auto-format = true
+
+[keys.normal]
+C-s = [":w", ":format"]
